@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#file-upload-section {
+    margin-top: 50px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+#fileLink {
+    margin-top: 20px;
+    color: blue;
+    font-size: 18px;
+    word-wrap: break-word;
+}
