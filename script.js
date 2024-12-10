@@ -20,7 +20,7 @@ uploadBtn.addEventListener('click', () => {
     
     if (file) {
         const randomCode = generateRandomCode(24); // توليد الكود العشوائي
-        const fileUrl = `https://xenon.github.io/files/${randomCode}`;
+        const fileUrl = `https://xenon-upload.github.io/files/${randomCode}`;
 
         // عرض رابط الملف
         fileLink.textContent = `تم رفع الملف بنجاح! رابط الملف: ${fileUrl}`;
