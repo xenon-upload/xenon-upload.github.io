@@ -1,41 +1,135 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10px;
     margin: 0;
-    padding: 0;
     text-align: center;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
+/* Main content section */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
 button {
-    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
+    padding: 12px 25px;
+    font-size: 16px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-#file-upload-section {
-    margin-top: 50px;
+/* Input fields */
+input[type="file"], input[type="text"], input[type="password"], input[type="email"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
 }
 
 input[type="file"] {
+    padding: 5px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Status messages */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+p#statusMessage {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p#fileMessage {
+    color: blue;
     margin-top: 10px;
 }
 
-#fileLink {
+/* Layout utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Flexbox for centering content */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
     margin-top: 20px;
-    color: blue;
-    font-size: 18px;
-    word-wrap: break-word;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    input[type="file"], input[type="text"], input[type="password"], input[type="email"], textarea {
+        font-size: 14px;
+    }
 }
